@@ -1,0 +1,6 @@
+# ninja log v5
+3	279	7206752537175324	CMakeFiles/Hangman.dir/main.cpp.obj	7b7724b9b440a489
+279	350	7206752537853917	Hangman.exe	c3db434fb776fa0
+7	50	7206809113370042	CMakeFiles/Hangman.dir/SecretWord.cpp.obj	3b05641afd603559
+3	297	7206809115830048	CMakeFiles/Hangman.dir/main.cpp.obj	7b7724b9b440a489
+298	379	7206809116610122	Hangman.exe	f036294c6447ba83
