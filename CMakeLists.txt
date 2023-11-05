@@ -5,4 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Hangman main.cpp
         SecretWord.cpp
-        SecretWord.h)
+        SecretWord.h
+        Alphabet.cpp
+        Alphabet.h
+        GameManager.cpp
+        GameManager.h)

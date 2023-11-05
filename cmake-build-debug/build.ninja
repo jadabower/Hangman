@@ -61,6 +61,18 @@ build CMakeFiles/Hangman.dir/SecretWord.cpp.obj: CXX_COMPILER__Hangman_unscanned
   OBJECT_DIR = CMakeFiles\Hangman.dir
   OBJECT_FILE_DIR = CMakeFiles\Hangman.dir
 
+build CMakeFiles/Hangman.dir/Alphabet.cpp.obj: CXX_COMPILER__Hangman_unscanned_Debug C$:/Jada$ personal/Applied$ Programming/Hangman/Alphabet.cpp || cmake_object_order_depends_target_Hangman
+  DEP_FILE = CMakeFiles\Hangman.dir\Alphabet.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hangman.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hangman.dir
+
+build CMakeFiles/Hangman.dir/GameManager.cpp.obj: CXX_COMPILER__Hangman_unscanned_Debug C$:/Jada$ personal/Applied$ Programming/Hangman/GameManager.cpp || cmake_object_order_depends_target_Hangman
+  DEP_FILE = CMakeFiles\Hangman.dir\GameManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Hangman.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hangman.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Hangman
@@ -69,7 +81,7 @@ build CMakeFiles/Hangman.dir/SecretWord.cpp.obj: CXX_COMPILER__Hangman_unscanned
 #############################################
 # Link the executable Hangman.exe
 
-build Hangman.exe: CXX_EXECUTABLE_LINKER__Hangman_Debug CMakeFiles/Hangman.dir/main.cpp.obj CMakeFiles/Hangman.dir/SecretWord.cpp.obj
+build Hangman.exe: CXX_EXECUTABLE_LINKER__Hangman_Debug CMakeFiles/Hangman.dir/main.cpp.obj CMakeFiles/Hangman.dir/SecretWord.cpp.obj CMakeFiles/Hangman.dir/Alphabet.cpp.obj CMakeFiles/Hangman.dir/GameManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Hangman.dir
