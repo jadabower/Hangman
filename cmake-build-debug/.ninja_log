@@ -22,3 +22,12 @@
 1919	2720	7208494689468177	Hangman.exe	cb61559c86dc246d
 3	2019	7208498206609840	CMakeFiles/Hangman.dir/main.cpp.obj	7b7724b9b440a489
 2019	2841	7208498214899754	Hangman.exe	cb61559c86dc246d
+9	502	7210019546858350	CMakeFiles/Hangman.dir/Alphabet.cpp.obj	ae0de3c2772ceded
+17	726	7210019549098393	CMakeFiles/Hangman.dir/GameManager.cpp.obj	e8a7a398db5c8a2f
+3	2177	7210019563498336	CMakeFiles/Hangman.dir/main.cpp.obj	7b7724b9b440a489
+12	2179	7210019563508337	CMakeFiles/Hangman.dir/SecretWord.cpp.obj	3b05641afd603559
+2179	3787	7210019579624618	Hangman.exe	cb61559c86dc246d
+4	848	7210019996249885	CMakeFiles/Hangman.dir/GameManager.cpp.obj	e8a7a398db5c8a2f
+849	2421	7210020011899982	Hangman.exe	cb61559c86dc246d
+3	544	7210020559907272	CMakeFiles/Hangman.dir/GameManager.cpp.obj	e8a7a398db5c8a2f
+545	2038	7210020574755420	Hangman.exe	cb61559c86dc246d

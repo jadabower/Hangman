@@ -8,12 +8,19 @@
 
 using namespace std;
 
-
 class SecretWord {
 public:
-    string _finalWord;
-
-
+    // Member variables
+    string finalWord;
+    string displayedWord;
+    bool wordIsGuessed = false;
+    // Methods
+    void GenerateDisplayedWord();
+    void UpdateDisplayedWord(char letterToGuess);
+    string GetDisplayedWordAsDisplayable();
+    string GetFinalWordAsDisplayable();
+    void UpdateWordIsGuessed();
+    bool TryGuessingLetter(char letterToGuess);
 };
 
 

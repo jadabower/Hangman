@@ -6,21 +6,25 @@
 #define HANGMAN_GAMEMANAGER_H
 #include <iostream>
 #include <stdlib.h>
+#include "SecretWord.h"
+#include "Alphabet.h"
 
 using namespace std;
 
 class GameManager {
     public:
-        // declarations
-        int livesLeft = 6;
+        // Member variables
+        int lives = 6;
         bool isPlaying = true;
-        string secretWord;
-        string displayedWord;
+        SecretWord secretWord;
+        Alphabet alphabet;
+        // Constructors
         GameManager();
         explicit GameManager(string inputtedWord);
-        static string GenerateDisplayedWord(const string& givenWord);
+        // Methods
         string GetRandomWord();
         void NextTurn();
+        void DisplayGame();
 };
 
 

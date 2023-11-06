@@ -32,9 +32,7 @@ int main() {
                 game.NextTurn();
             }
         }
-
     } while (playersChoice != "quit");
-
 
     return 0;
 }
