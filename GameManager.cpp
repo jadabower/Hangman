@@ -29,7 +29,6 @@ string GameManager::GetRandomWord() {
 }
 
 void GameManager::NextTurn() {
-//    system("CLS");
     // End the game if they are out of lives or have guessed the word
     if (lives < 1) {
         DisplayGame();

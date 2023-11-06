@@ -12,10 +12,10 @@ class Alphabet {
 public:
     // Member variables
     string letterPool;
-    string displayedLineOne;
-    string displayedLineTwo;
-    string displayedLineThree;
-    string displayedLineFour;
+    string displayedLineOne = "abcdefg";
+    string displayedLineTwo = "hijklmn";
+    string displayedLineThree = "opqrstu";
+    string displayedLineFour = "vwxyz";
     // Constructor
     Alphabet();
     // Methods

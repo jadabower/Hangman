@@ -29,9 +29,9 @@ string Alphabet::GetDisplayableDisplayedLine(string lineToDisplay) {
     for (int i = 0; i < lineToDisplay.length(); i++) {
         // Returns the displayed line with spaces between the letters
         if (i == lineToDisplay.length() - 1)
-            result += toupper(lineToDisplay[i]);
+            result += (char)toupper(lineToDisplay[i]);
         else
-            result += toupper(lineToDisplay[i]) + ' ';
+            result += ((char)toupper(lineToDisplay[i])) + string(" ");
     }
     return result;
 }
@@ -43,9 +43,11 @@ bool Alphabet::TryToUpdateAlphabet(char letterToTry) {
         if (letterPool[i] == letterToTry) {
             // If it does, set contains to true and change the letter in the pool to a dash
             contains = true;
-            letterPool[i] = '-';
+            letterPool.replace(i, 1, "-");
         }
     }
+    // Update the displayed alphabet to match
+    UpdateDisplayedAlphabetLines();
     // Return whether the letter was a valid input or not;
     return contains;
 }

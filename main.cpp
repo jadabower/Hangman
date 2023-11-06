@@ -24,12 +24,15 @@ int main() {
             } else if (playersChoice != "random") {
                 // Creates a game with a secret word
                 game = GameManager(playersChoice);
+                while (game.isPlaying) {
+                    game.NextTurn();
+                }
             } else {
                 // Otherwise create a game with a random word
                 game = GameManager();
-            }
-            while (game.isPlaying) {
-                game.NextTurn();
+                while (game.isPlaying) {
+                    game.NextTurn();
+                }
             }
         }
     } while (playersChoice != "quit");

@@ -28,7 +28,7 @@ string SecretWord::GetDisplayedWordAsDisplayable() {
         if (i == finalWord.length() - 1)
             result += displayedWord[i];
         else
-            result += displayedWord[i] + ' ';
+            result += displayedWord[i] + string(" ");
     }
     return result;
 }
@@ -38,9 +38,9 @@ string SecretWord::GetFinalWordAsDisplayable() {
     for (int i = 0; i < finalWord.length(); i++) {
         // Returns the displayed word with spaces between the letters
         if (i == finalWord.length() - 1)
-            result += toupper(finalWord[i]);
+            result += (char)toupper(finalWord[i]);
         else
-            result += toupper(finalWord[i]) + ' ';
+            result += (char)toupper(finalWord[i]) + string(" ");
     }
     return result;
 }
