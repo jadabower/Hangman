@@ -5,6 +5,7 @@
 #include "SecretWord.h"
 #include <regex>
 
+// Generates the displayedWord varible to be a string of underscores the length of finalWord
 void SecretWord::GenerateDisplayedWord() {
     for (int i = 0; i < finalWord.length(); i++) {
         // Adds underscores to the displayedWord for each character in the finalWord
@@ -12,6 +13,7 @@ void SecretWord::GenerateDisplayedWord() {
     }
 }
 
+// Updates the displayedWord variable to replace the underscore with the letter in the correct spot
 void SecretWord::UpdateDisplayedWord(char letterToGuess) {
     for (int i = 0; i < finalWord.length(); i++) {
         // Adds the guessed character in the correct positions
@@ -21,10 +23,10 @@ void SecretWord::UpdateDisplayedWord(char letterToGuess) {
     }
 }
 
+// Returns a string of the displayedWord with spaces between the letters
 string SecretWord::GetDisplayedWordAsDisplayable() {
     string result;
     for (int i = 0; i < finalWord.length(); i++) {
-        // Returns the displayed word with spaces between the letters
         if (i == finalWord.length() - 1)
             result += displayedWord[i];
         else
@@ -33,10 +35,10 @@ string SecretWord::GetDisplayedWordAsDisplayable() {
     return result;
 }
 
+// Returns a string of the finalWord with spaces between the letters
 string SecretWord::GetFinalWordAsDisplayable() {
     string result;
     for (int i = 0; i < finalWord.length(); i++) {
-        // Returns the displayed word with spaces between the letters
         if (i == finalWord.length() - 1)
             result += (char)toupper(finalWord[i]);
         else
@@ -45,12 +47,14 @@ string SecretWord::GetFinalWordAsDisplayable() {
     return result;
 }
 
+// Updates wordIsGuessed based on whether the displayedWord has any underscores or not
 void SecretWord::UpdateWordIsGuessed() {
-    // Updates wordIsGuessed based on whether the displayedWord has any underscores or not
     regex regexp("[A-Za-z]+");
     wordIsGuessed = regex_match(displayedWord, regexp);
 }
 
+// If the finalWord contains the letter they guessed, update displayedWord and wordIsGuessed and return true
+// Otherwise, return false
 bool SecretWord::TryGuessingLetter(char letterToGuess) {
     bool contains = false;
     for (int i = 0; i < finalWord.length(); i++) {

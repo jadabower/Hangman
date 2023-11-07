@@ -9,6 +9,7 @@ Alphabet::Alphabet() {
     UpdateDisplayedAlphabetLines();
 }
 
+// Updates the displayed lines to be the same as the alphabet pool
 void Alphabet::UpdateDisplayedAlphabetLines() {
     for (int i = 0; i < 7; i++) {
         displayedLineOne[i] = letterPool[i];
@@ -24,6 +25,7 @@ void Alphabet::UpdateDisplayedAlphabetLines() {
     }
 }
 
+// Returns a displayable version of a line (uppercase with spaces between the letters)
 string Alphabet::GetDisplayableDisplayedLine(string lineToDisplay) {
     string result;
     for (int i = 0; i < lineToDisplay.length(); i++) {
@@ -36,6 +38,9 @@ string Alphabet::GetDisplayableDisplayedLine(string lineToDisplay) {
     return result;
 }
 
+// If the letter they tried to guess is a valid letter from the pool, removes it from the list of
+// valid letters and returns true
+// Otherwise, returns false
 bool Alphabet::TryToUpdateAlphabet(char letterToTry) {
     bool contains = false;
     for (int i = 0; i < letterPool.length(); i++) {
