@@ -1,9 +1,9 @@
 # Overview
-My goal for this project was to have a basic understanding of how the C++ language works and be able to create a working program. I did not really care about how user-friendly the program is because I just wanted to make something that would help with my understanding of C++. I had never touched the language (although I have worked in Java and C#) or the IDE (I have dabbled in other JetBrains IDE's before, but never created a project file from start to finish) before this project. So my goal was that I learn about the language and the enviornment, and it really wasn't about the final product.
+My goal for this project was to have a basic understanding of how the C++ language works and be able to create a working program. I did not really care about how user-friendly the program is because I just wanted to make something that would help with my understanding of C++. I had never touched the language (although I have worked in Java and C#) or the IDE (I have dabbled in other JetBrains IDE's before, but never created a project file from start to finish) before this project. So my goal was that I learn about the language and the environment, and it really wasn't about the final product.
 
 That being said, I did want to have something to show for all my hard work. So I figured the best thing I could do is create a simple program that runs in the terminal. I decided upon a simple Hangman game that prompts the user for a word (or they can choose to have a random word). It then prompts the user for letters one at a time until the program has finished (either they ran out of lives and hung the man, or they guessed the word and saved the man).  
 
-[Software Demo Video](https://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/r2rcyjQkYVI)
 
 # Development Environment
 - JetBrains CLion (color theme - Dune | Arrakis Night)
